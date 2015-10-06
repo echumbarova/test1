@@ -37,7 +37,7 @@ public class SecondBiggestNumberTest {
 		PrintStream out = new PrintStream(baos);
 		problem.runFromInput(scanner, true, out);
 		assertEquals("Incorrect result for array [1, 2].",
-		    "1", baos.toString());
+		    "1", baos.toString().trim());
 	}
 	
 	@Test
@@ -48,7 +48,7 @@ public class SecondBiggestNumberTest {
         PrintStream out = new PrintStream(baos);
         problem.runFromInput(scanner, true, out);
         assertEquals("Incorrect result for array [1, 2, 3].", 
-            "2", baos.toString());
+            "2", baos.toString().trim());
     }
     
 	@Test
@@ -59,7 +59,7 @@ public class SecondBiggestNumberTest {
         PrintStream out = new PrintStream(baos);
         problem.runFromInput(scanner, true, out);
         assertEquals("Incorrect result for array [10, 10, 10].", 
-            "10", baos.toString());
+            "10", baos.toString().trim());
     }
     
 }
