@@ -28,4 +28,3 @@ public class SecondBiggestNumber extends Problem {
 
 
 }
-huy

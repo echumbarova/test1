@@ -19,13 +19,25 @@ public class SecondBiggestNumberTest {
 	}
 	
 	@Test
-	public void nullTest() {
+    public void nullTest() {
+        Scanner scanner = new Scanner("0\n");
+        scanner.useDelimiter(System.lineSeparator() + "|\\s");
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        PrintStream out = new PrintStream(baos);
+        problem.runFromInput(scanner, true, out);
+        assertEquals("Nan", baos.toString(), 
+            "Incorrect results for empty array.");
+    }
+	
+	@Test
+	public void twoElementsTest() {
 		Scanner scanner = new Scanner("2\n1 2\n");
 		scanner.useDelimiter(System.lineSeparator() + "|\\s");
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		PrintStream out = new PrintStream(baos);
 		problem.runFromInput(scanner, true, out);
-		assertEquals(baos.toString(), "1");
+		assertEquals("1", baos.toString(),
+		    "Incorrect result for array [1, 2].");
 	}
 
 }
