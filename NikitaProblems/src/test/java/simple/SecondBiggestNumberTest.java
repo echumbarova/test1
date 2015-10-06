@@ -25,8 +25,8 @@ public class SecondBiggestNumberTest {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PrintStream out = new PrintStream(baos);
         problem.runFromInput(scanner, true, out);
-        assertEquals("Nan", baos.toString(), 
-            "Incorrect results for empty array.");
+        assertEquals("Incorrect results for empty array.",
+            "Nan", baos.toString().trim());
     }
 	
 	@Test

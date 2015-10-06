@@ -16,6 +16,13 @@ public class SecondBiggestNumber extends Problem {
 		if (!skipPrompts) {
 			System.out.println("Enter the array elements separated with spaces:");
 		}
+		
+		if (numberOfItems <= 0) {
+		  // Array is empty.
+		  out.println("Nan");
+		  return;
+		}
+		
 		int[] array = new int[numberOfItems];
 		for (int i = 0; i < numberOfItems; i++) {
 			array[i] = scanner.nextInt();
