@@ -24,10 +24,12 @@ public class PrimeDecomposition extends Problem {
 		int n = number;
 		List<Integer> result = new ArrayList<Integer>();
         double m = Math.sqrt(n);
-		while (i < m) {		
-			n = n / i;			
-		}
-		result.add(i);										
+		while (i < m) {	
+			if (n > 1) {
+			n = n / i;	
+			result.add(i);
+			}
+		}										
 	    out.println(result.toString());
 	}
 
