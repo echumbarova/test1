@@ -21,12 +21,14 @@ public class PrimeDecomposition extends Problem {
 			return;
 		}
 		int i=2;
+		int n = number;
 		List<Integer> result = new ArrayList<Integer>();
-
-		while (i <= Math.floor(Math.sqrt(number))) {			
-			result.add(i);										
-		out.println(result.toString());
+        double m = Math.sqrt(n);
+		while (i < m) {		
+			n = n \ i;
 		}
+		result.add(i);										
+	    out.println(result.toString());
 	}
 
 }
