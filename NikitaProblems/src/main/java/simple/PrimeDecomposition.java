@@ -12,7 +12,12 @@ public class PrimeDecomposition extends Problem {
     if (!skipPrompts) {
       System.out.println("Enter the number:");
     }
-
+    int number = scanner.nextInt();
+    if (number <= 0) {
+        // Array is empty.
+        out.println("Nan");
+        return;
+      }
   }
 
 }
