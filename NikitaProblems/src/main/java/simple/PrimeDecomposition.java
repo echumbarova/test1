@@ -20,17 +20,19 @@ public class PrimeDecomposition extends Problem {
 			out.println("Nan");
 			return;
 		}
-		int i=2;
+		int i = 2;
 		int n = number;
 		List<Integer> result = new ArrayList<Integer>();
-        double m = Math.sqrt(n);
-		while (i < m) {	
-			if (n > 1) {
-			n = n / i;	
-			result.add(i);
+		double m = Math.sqrt(n);
+		while (i < m) {
+			if (n / i > 0) {
+				n = n / i;
+				result.add(i);
+			} else {
+				i = i + 1;
 			}
-		}										
-	    out.println(result.toString());
+		}
+		out.println(result.toString());
 	}
 
 }
