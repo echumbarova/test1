@@ -27,6 +27,7 @@ public class SecondBiggestNumber extends Problem {
 		for (int i = 0; i < numberOfItems; i++) {
 			array[i] = scanner.nextInt();
 		}		
+		int i = 0;
 		int max = 0;
 		int secondMax = 0;
 	    if(array[i]>(array[i+1])){
