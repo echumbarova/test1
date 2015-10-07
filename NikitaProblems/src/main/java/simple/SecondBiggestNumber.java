@@ -46,11 +46,11 @@ public class SecondBiggestNumber extends Problem {
 	    if(element>secondMax){
 	        secondMax = element;	        			   
 	    }
-	}
-  }
+	    }
+        }
 		// Output result here:		
 		out.println(secondMax);
- }
+    }
 
 
 }
