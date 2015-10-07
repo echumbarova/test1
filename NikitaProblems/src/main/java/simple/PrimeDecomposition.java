@@ -1,6 +1,8 @@
 package simple;
 
 import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import main.Problem;
@@ -14,7 +16,6 @@ public class PrimeDecomposition extends Problem {
     }
     int number = scanner.nextInt();
     if (number <= 0) {
-        // Array is empty.
         out.println("Nan");
         return;
       }
