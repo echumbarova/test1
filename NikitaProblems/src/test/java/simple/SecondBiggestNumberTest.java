@@ -45,7 +45,17 @@ public class SecondBiggestNumberTest {
     ByteArrayOutputStream baos = new ByteArrayOutputStream();
     PrintStream out = new PrintStream(baos);
     problem.runFromInput(scanner, true, out);
-    assertEquals("Incorrect result for array [1, 2, 3].", "2", baos.toString().trim());
+    assertEquals("Incorrect result for array [1, 3, 2].", "2", baos.toString().trim());
+  }
+  
+  @Test
+  public void fourElementsTest() {
+    Scanner scanner = new Scanner("4\n1 2 3 4\n");
+    scanner.useDelimiter(System.lineSeparator() + "|\\s");
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    PrintStream out = new PrintStream(baos);
+    problem.runFromInput(scanner, true, out);
+    assertEquals("Incorrect result for array [1, 2, 3, 4].", "3", baos.toString().trim());
   }
 
   @Test
