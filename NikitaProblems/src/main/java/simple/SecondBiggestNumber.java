@@ -27,22 +27,25 @@ public class SecondBiggestNumber extends Problem {
 		for (int i = 0; i < numberOfItems; i++) {
 			array[i] = scanner.nextInt();
 		}		
-		int i = 0;
+
 		int max = 0;
 		int secondMax = 0;
-	    if(array[i]>(array[i+1])){
-	    	max = array[i];
-	        secondMax = array[i+1];
-	    else
-		    max = array[i+1];
-	        secondMax = array[i];
+	    if(array[0]>array[1]){
+	    	max = array[0];
+	        secondMax = array[1];
 	    }
-	    for ( array[i+2]; array[i+2] < numberOfItems; array[i+2]++) {
-	    	if(array[i+2]>(Max){
-	    		max = array[i+2];
-	        else
-	        	if(array[i+2]>(secondMax){
-	        		secondMax = array[i+2];	        			   
+	    else {
+		    max = array[1];
+	        secondMax = array[0];
+	    }
+	    for (int i = 2; i < numberOfItems; i++) {
+	    	int element = array[i];
+	    	if(array[i]>max){
+	    		max = array[i];
+	    	}
+	        else{
+	        	if(array[i]>secondMax){
+	        		secondMax = array[i];	        			   
 	        	}
 	    	}
 	    }
