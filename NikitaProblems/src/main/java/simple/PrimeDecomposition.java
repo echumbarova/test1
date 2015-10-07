@@ -24,10 +24,9 @@ public class PrimeDecomposition extends Problem {
 		List<Integer> result = new ArrayList<Integer>();
 
 		while (i <= Math.floor(Math.sqrt(number))) {			
-											
-		}
-		result.add(i);
+			result.add(i);										
 		out.println(result.toString());
+		}
 	}
 
 }
