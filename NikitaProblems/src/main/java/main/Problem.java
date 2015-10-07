@@ -54,7 +54,7 @@ public abstract class Problem {
   static Problem[] problemArray = {new SecondBiggestNumber(),
     new PrimeDecomposition(), new PolyndromChecker()};
 
-  
+ 
   public static Problem forNumber(int n) {
     Problem problem = problemArray[n - 1];
     return problem;
