@@ -32,13 +32,17 @@ public class SecondBiggestNumber extends Problem {
 	    if(array[i]>(array[i+1])){
 	    	max = array[i];
 	        secondMax = array[i+1];
-	        else
+	    else
 		    max = array[i+1];
 	        secondMax = array[i];
 	    }
 	    for ( array[i+2]; array[i+2] < numberOfItems; array[i+2]++) {
 	    	if(array[i+2]>(Max){
-	    		
+	    		max = array[i+2];
+	        else
+	        	if(array[i+2]>(secondMax){
+	        		secondMax = array[i+2];	        			   
+	        	}
 	    	}
 	    }
 		// Output result here:		
