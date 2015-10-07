@@ -9,6 +9,8 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
+import simple.PolyndromChecker;
+import simple.PrimeDecomposition;
 import simple.SecondBiggestNumber;
 
 public abstract class Problem {
@@ -49,7 +51,8 @@ public abstract class Problem {
     System.out.println(result.wasSuccessful());
   }
 
-  static Problem[] problemArray = {new SecondBiggestNumber()};
+  static Problem[] problemArray = {new SecondBiggestNumber(),
+    new PrimeDecomposition(), new PolyndromChecker()};
 
   public static Problem forNumber(int n) {
     Problem problem = problemArray[n - 1];
