@@ -5,13 +5,12 @@ import java.util.Scanner;
 
 import main.Problem;
 
-public class PolyndromChecker extends Problem{
+public class PolyndromChecker extends Problem {
 
-	@Override
-	public void runFromInput(Scanner scanner, boolean skipPrompts,
-			PrintStream out) {
-		// TODO Your code here.
-		
-	}
+  @Override
+  public void runFromInput(Scanner scanner, boolean skipPrompts, PrintStream out) {
+    // TODO Your code here.
+
+  }
 
 }
