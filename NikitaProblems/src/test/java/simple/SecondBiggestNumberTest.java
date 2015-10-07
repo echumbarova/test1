@@ -65,7 +65,30 @@ public class SecondBiggestNumberTest {
     ByteArrayOutputStream baos = new ByteArrayOutputStream();
     PrintStream out = new PrintStream(baos);
     problem.runFromInput(scanner, true, out);
-    assertEquals("Incorrect result for array [10, 10, 10].", "10", baos.toString().trim());
+    assertEquals("Incorrect result for array [10, 10, 10].", "10", 
+        baos.toString().trim());
+  }
+  
+  @Test
+  public void negativeElementsTest() {
+    Scanner scanner = new Scanner("4\n-2 10 -2 -2\n");
+    scanner.useDelimiter(System.lineSeparator() + "|\\s");
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    PrintStream out = new PrintStream(baos);
+    problem.runFromInput(scanner, true, out);
+    assertEquals("Incorrect result for array [-2 10 -2 -2].", "-2", 
+        baos.toString().trim());
+  }
+  
+  @Test
+  public void reverseSortedTest() {
+    Scanner scanner = new Scanner("5\n60 10 -2 -4 -6 -1001\n");
+    scanner.useDelimiter(System.lineSeparator() + "|\\s");
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    PrintStream out = new PrintStream(baos);
+    problem.runFromInput(scanner, true, out);
+    assertEquals("Incorrect result for array [60 10 -2 -4 -6 -1001].", "10", 
+        baos.toString().trim());
   }
 
 }
