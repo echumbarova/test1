@@ -25,7 +25,7 @@ public class PrimeDecomposition extends Problem {
 		List<Integer> result = new ArrayList<Integer>();
         double m = Math.sqrt(n);
 		while (i < m) {		
-			n = n \ i;
+			n = n / i;			
 		}
 		result.add(i);										
 	    out.println(result.toString());
