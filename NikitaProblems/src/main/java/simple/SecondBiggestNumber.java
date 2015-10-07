@@ -40,6 +40,7 @@ public class SecondBiggestNumber extends Problem {
     for (int i = 2; i < numberOfItems; i++) {
       int element = array[i];
       if (element > max) {
+    	secondMax = max;
         max = element;
       } else if (element > secondMax) {
         secondMax = element;
