@@ -41,16 +41,16 @@ public class SecondBiggestNumber extends Problem {
 	    int element = array[i];
 	    if(element>max){
 	        max = element;
-	    	}
-	    else{
-	        if(element>secondMax){
-	        secondMax = element;	        			   
-	        	}
-	    	}
 	    }
+	    else{
+	    if(element>secondMax){
+	        secondMax = element;	        			   
+	    }
+	}
+  }
 		// Output result here:		
 		out.println(secondMax);
-	}
+ }
 
 
 }
