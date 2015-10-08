@@ -32,6 +32,11 @@ public class PrimeDecomposition extends Problem {
 				i++;
 			}
 		}
+		// Если после выхода из цикла n не равно единице, значит
+		// n - простой делитель.
+		if (n > 1) {
+			result.add(n);
+		}
 		out.println(result.toString());
 	}
 
