@@ -8,6 +8,10 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
+import advanced.NthMetric;
+import advanced.RunLengthDecoding;
+import advanced.RunLengthEncoding;
+
 import simple.PolyndromChecker;
 import simple.PrimeDecomposition;
 import simple.SecondBiggestNumber;
@@ -69,7 +73,9 @@ public abstract class Problem {
 	}
 
 	static Problem[] problemArray = { new SecondBiggestNumber(),
-			new PrimeDecomposition(), new PolyndromChecker() };
+			new PrimeDecomposition(), new PolyndromChecker(),
+			new NthMetric(), new RunLengthEncoding(),
+			new RunLengthDecoding()};
 
 	public static Problem forNumber(int n) {
 		Problem problem = problemArray[n - 1];
