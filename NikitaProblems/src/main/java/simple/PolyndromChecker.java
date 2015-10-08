@@ -25,7 +25,7 @@ public class PolyndromChecker extends Problem {
 		for (int i = length - 1; i >= 0; i--) {
 			reverse = reverse + original.charAt(i);
 		}
-		if (original == reverse) {
+		if (original.equals(reverse)) {
 			System.out.println("This is polindrome.");
 		} else {
 			System.out.println("This is not polindrome.");
