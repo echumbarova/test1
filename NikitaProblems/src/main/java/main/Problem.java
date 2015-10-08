@@ -11,10 +11,12 @@ import org.junit.runner.notification.Failure;
 import advanced.NthMetric;
 import advanced.RunLengthDecoding;
 import advanced.RunLengthEncoding;
-
+import simple.FindSubstring;
+import simple.ExchangesMoney;
 import simple.PolyndromChecker;
 import simple.PrimeDecomposition;
 import simple.SecondBiggestNumber;
+
 
 public abstract class Problem {
 
@@ -74,6 +76,7 @@ public abstract class Problem {
 
 	static Problem[] problemArray = { new SecondBiggestNumber(),
 			new PrimeDecomposition(), new PolyndromChecker(),
+			new ExchangesMoney(), new simple.FindSubstring(),
 			new NthMetric(), new RunLengthEncoding(),
 			new RunLengthDecoding()};
 
