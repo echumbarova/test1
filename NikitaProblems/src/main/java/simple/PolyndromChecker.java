@@ -9,8 +9,15 @@ public class PolyndromChecker extends Problem {
 
   @Override
   public void runFromInput(Scanner scanner, boolean skipPrompts, PrintStream out) {
-    // TODO Your code here.
+		if (!skipPrompts) {
+			System.out.println("Enter a word:");
+		}
+		String word = scanner.nextLine();
+		if (word==null) {
+			out.println("Nan");
+			return;
 
   }
 
+}
 }
