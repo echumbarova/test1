@@ -22,37 +22,37 @@ public class PolyndromCheckerTest {
 	
 	@Test
 	public void singleLetterTest() {
-		assertEquals("Incorrect results for 'a'.", "true",
+		assertEquals("Incorrect results for 'a'.", "This is polindrome.",
 				problem.run("a"));
 	}
 	
 	@Test
 	public void twoLetterTest() {
-		assertEquals("Incorrect results for 'bb'.", "true",
+		assertEquals("Incorrect results for 'bb'.", "This is polindrome.",
 				problem.run("bb"));
 	}
 	
 	@Test
 	public void twoLetterFalseTest() {
-		assertEquals("Incorrect results for 'bc'.", "false",
+		assertEquals("Incorrect results for 'bc'.", "This is not polindrome.",
 				problem.run("bc"));
 	}
 	
 	@Test
 	public void evenLetterTest() {
-		assertEquals("Incorrect results for 'abbchhcbba'.", "true",
+		assertEquals("Incorrect results for 'abbchhcbba'.", "This is polindrome.",
 				problem.run("abbchhcbba"));
 	}
 	
 	@Test
 	public void evenLetterFalseTest() {
-		assertEquals("Incorrect results for 'abtchhcbba'.", "false",
+		assertEquals("Incorrect results for 'abtchhcbba'.", "This is not polindrome.",
 				problem.run("abtchhcbba"));
 	}
 	
 	@Test
 	public void oddLetterTest() {
-		assertEquals("Incorrect results for 'hhhhhhaaaacaaaahhhhhh'.", "true",
+		assertEquals("Incorrect results for 'hhhhhhaaaacaaaahhhhhh'.", "This is polindrome.",
 				problem.run("hhhhhhaaaacaaaahhhhhh"));
 	}
 }
