@@ -22,13 +22,13 @@ public class ExchangesMoneyTest {
 	
 	@Test
     public void impossibleTest() {
-        assertEquals("Incorrect results for 7.", "Impossible",
+        assertEquals("Incorrect results for 7.", "Not possible",
                 problem.run("7"));
     }
 	
 	@Test
 	public void singleDigitTest1() {
-		assertEquals("Incorrect results for 5.", "5",
+		assertEquals("Incorrect results for 5.", "3*0 + 5*1",
 				problem.run("5"));
 	}
 	

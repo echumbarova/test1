@@ -11,7 +11,7 @@ public class FindSubstringTest {
 
 	@Before
 	public void setUp() throws Exception {
-		problem = new PrimeDecomposition();
+		problem = new FindSubstring();
 	}
 
 	@Test
