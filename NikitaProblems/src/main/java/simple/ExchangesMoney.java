@@ -20,15 +20,19 @@ public class ExchangesMoney extends Problem {
 			out.println("Nan");
 			return;
 		}
+		int x;
 		int n = number;
-		List<Integer> result = new ArrayList<Integer>();
-		for (int x = 0; (n - 3 * x) / 5 > 0; x++) {
-			n = n - 3;
-			result.add(x);
+		List<String> result = new ArrayList<String>();
+		for (x = 0; (n - 3 * x)% 5 > 0; x++) {
+			if (x < n/3){
+				x = 
+			result.add("3*" + (x));
+			}
 		}
+		n = n-3*x;
 		if (n / 5 > 0) {
 			int y = n / 5;
-			result.add(y);
+			result.add("5*" + y);
 		}
 		out.println(result.toString());
 	}
