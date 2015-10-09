@@ -15,26 +15,22 @@ public class ExchangesMoney extends Problem {
 		if (!skipPrompts) {
 			System.out.println("Enter the number:");
 		}
-		int number = scanner.nextInt();
-		if (number <= 0) {
+		int n = scanner.nextInt();
+		// Handle edge cases.
+		if (n <= 0) {
 			out.println("Nan");
 			return;
 		}
-		int x;
-		int n = number;
-		if ((n < 5) || (n > 6) && (n < 8)) {
-			System.out.println(n);
-			return;
+		// Handle cases when exchange is not possible.
+		if (n < 3 || n == 4 || n == 7) {
+		  out.println("Not possible");
+		  return;
 		}
-		List<String> result = new ArrayList<String>();
-		for (x = 0; (n - 3 * x) % 5 > 0; x++) {
+		
+		for (int x = 0; x < n / 3; x++) {
+		  if ((n - 3*x) % 5 == 0) {
+		    out.println("3*" + x + " + 5*" + (n - 3*x) / 5);
+		  }
 		}
-		result.add("3*" + x);
-		n = n - (3 * x);
-		if (n / 5 > 0) {
-			int y = n / 5;
-			result.add("5*" + y);
-		}
-		out.println(result.toString());
 	}
 }
