@@ -21,16 +21,14 @@ public class ExchangesMoney extends Problem {
 			return;
 		}
 		int n = number;
-		int y;
 		List<Integer> result = new ArrayList<Integer>();
-		for (int x = 0; n / 3 > 0; x++) {
-			if (n - 3 * x / 5 > 0) {
-				y = (n - 3 * x) / 5;
-			}
+		for (int x = 0; (n - 3 * x) / 5 > 0; x++) {
+			n = n - 3;
+			result.add(x);
 		}
-
-		if (n > 1) {
-			result.add(n);
+		if (n / 5 > 0) {
+			int y = n / 5;
+			result.add(y);
 		}
 		out.println(result.toString());
 	}
