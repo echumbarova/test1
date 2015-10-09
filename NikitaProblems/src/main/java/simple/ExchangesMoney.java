@@ -23,7 +23,6 @@ public class ExchangesMoney extends Problem {
       out.println("Not possible");
       return;
     }
-
     for (int x = 0; x <= n / 3; x++) {
       if ((n - 3 * x) % 5 == 0) {
         out.println("3*" + x + " + 5*" + (n - 3 * x) / 5);
