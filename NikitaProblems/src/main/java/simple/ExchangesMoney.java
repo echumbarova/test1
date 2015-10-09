@@ -22,7 +22,7 @@ public class ExchangesMoney extends Problem {
 		}
 		int x;
 		int n = number;
-		if (n < 8) {
+		if ((n < 5) || (n > 6) && (n < 8)) {
 			System.out.println(n);
 			return;
 		}
@@ -35,7 +35,6 @@ public class ExchangesMoney extends Problem {
 			int y = n / 5;
 			result.add("5*" + y);
 		}
-
 		out.println(result.toString());
 	}
 }
