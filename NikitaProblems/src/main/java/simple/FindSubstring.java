@@ -28,8 +28,11 @@ public class FindSubstring extends Problem {
 		}
 		int lenStr = str.length();
 		int lenSearch = search.length();
-		for (int i=0;lenStr>lenSearch;i++ ) {
-	
+		for (int i = 0; lenStr > lenSearch; i++) {
+			boolean isContain1 = str.contains(search);
+			System.out.println(isContain1);
+			str.equals(search);
 		}
+		out.println(str.equals(search));
 	}
 }
