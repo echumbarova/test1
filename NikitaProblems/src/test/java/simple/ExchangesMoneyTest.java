@@ -21,6 +21,12 @@ public class ExchangesMoneyTest {
 	}
 	
 	@Test
+    public void impossibleTest() {
+        assertEquals("Incorrect results for 7.", "Impossible",
+                problem.run("7"));
+    }
+	
+	@Test
 	public void singleDigitTest1() {
 		assertEquals("Incorrect results for 5.", "5",
 				problem.run("5"));
