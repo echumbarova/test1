@@ -11,7 +11,7 @@ public class ExchangesMoneyTest {
 
 	@Before
 	public void setUp() throws Exception {
-		problem = new PrimeDecomposition();
+		problem = new ExchangesMoney();
 	}
 
 	@Test
