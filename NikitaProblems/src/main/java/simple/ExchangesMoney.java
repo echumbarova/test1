@@ -23,12 +23,10 @@ public class ExchangesMoney extends Problem {
 		int x;
 		int n = number;
 		List<String> result = new ArrayList<String>();
-		for (x = 0; (n - 3 * x)% 5 > 0; x++) {
-			if (x < n/3){
-				x = 
-			result.add("3*" + (x));
-			}
+		for (x = 0; (n - 3 * x)% 5 < 0; x++) {
+			
 		}
+		result.add("3*" + (x));
 		n = n-3*x;
 		if (n / 5 > 0) {
 			int y = n / 5;
