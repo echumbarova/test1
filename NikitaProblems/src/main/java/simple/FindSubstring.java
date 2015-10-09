@@ -11,12 +11,25 @@ public class FindSubstring extends Problem {
 	public void runFromInput(Scanner scanner, boolean skipPrompts,
 			PrintStream out) {
 		if (!skipPrompts) {
-			System.out.println("Enter the number:");
+			System.out.println("Enter the string:");
 		}
-		int number = scanner.nextInt();
-		if (number <= 0) {
+		String str = scanner.nextLine();
+		if (str == null) {
 			out.println("Nan");
 			return;
+		}
+		if (!skipPrompts) {
+			System.out.println("Enter the substring:");
+		}
+		String search = scanner.nextLine();
+		if (search == null) {
+			out.println("Nan");
+			return;
+		}
+		int lenStr = str.length();
+		int lenSearch = search.length();
+		for (int i=0;lenStr>lenSearch;i++ ) {
+	
 		}
 	}
 }
